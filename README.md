@@ -112,3 +112,15 @@ Protokol WebSocket ditentukan dengan prefix `ws://` pada URI yang digunakan clie
    - Di client: Protokol didefinisikan eksplisit dengan URI format `ws://host:port`
 
 3. **Kompatibilitas**: Kedua sisi harus menggunakan port yang sama (8080) agar bisa berkomunikasi.
+
+# Menambahkan Informasi ke client
+
+* Tambahan : pertama maap saya kira sudah harus dikerjakan terlebih dahulu bagian ini lewat link githubnya
+* Gambar : Sama persis yang diatas
+
+## Alasan :
+
+1. **Identifikasi Pengirim**: Dalam aplikasi chat dengan banyak pengguna, penting untuk mengetahui siapa yang mengirim pesan. Tanpa identifikasi, akan sulit membedakan pengirim pesan.
+2. **Format yang Lebih Baik**: Format [IP:Port] membuat pesan lebih mudah dibaca dan memberikan konteks visual tentang asal pesan.
+3. **Visibilitas dan Debugging**: Dengan adanya informasi IP dan port, lebih mudah untuk melacak pesan dan melakukan debugging jika terjadi masalah.
+4.**Dasar untuk Fitur Username**: Ini adalah langkah awal yang bisa dikembangkan menjadi sistem username yang lebih user-friendly di masa depan. Jika nantinya kita ingin mengimplementasikan username, kita bisa mengganti format [IP:Port] dengan [Username].
